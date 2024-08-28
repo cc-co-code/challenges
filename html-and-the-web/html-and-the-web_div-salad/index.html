@@ -13,105 +13,61 @@ Let's fix this mess!
   </head>
   <!--someone forgot to wrap the content of our webpage with an HTML element,
 	which one was it again?-->
-  <html>
-    <html>
-      <h1>Cecilia</h1>
+  <body>
+    <div>
+      <h1>Jane Doe</h1>
       <!--Which elements could be used to link to parts of the webpage,
 		which appear below?-->
-      <html id="nav">
-        <h2>About Me</h2>
-        <p>
-          I am 30 years old and I live in Berlin. I studied nutritional science
-          on Halle.<p/>
-
-          I like: 
-          <ol>
-            <li>Animals</li>
-            <li>Motorcycles</li>
-            <li>Summer</li>
-          </ol>
-        </p>
-        <h3>Contact</h3>
-        <p>This is my GitHub: </p>
-        <ol> 
-          <li><a href= "https://github.com/cc-co-code">GitHub</a>  
-          <li/><a href=" https://www.linkedin.com/in/cecilia-bartlewski-328b94309/">LinkedIn</a>
-          </ol>
-          
-        </p>
-        <h3>
-          Skillset
-        </h3>
-      </html>
-    </html>
+      <div id="nav">
+        <a href="about">About Me</a>
+        <a href="contact">Contact</a>
+        <a href="skillset">Skillset</a>
+      </div>
+    </div>
     <!--Looks like the following part is the central content of our webpage.-->
-    <html>
-      <html id="about-me">
-        <html>
-          About me
-        </html>
-        <html>
+    <main>
+      <div id="about-me">
+        <div>About me</div>
+        <p>
           Hi there! Welcome to my personal website. Here is gathered the most
           important information about me. If you want to work with me or get to
           know me, please don't hesitate to get in contact.
-        </html>
+        </p>
         <!--What element could be used to combine an image with a descriptive caption?-->
-        <html>
+        <p>
           <img
           width="200"
           height="200"
-           src="https://www.akc.org/wp-content/uploads/2017/11/Golden-Retriever-Puppy.jpg"
-            alt="picture of a golden retriever puppy"/>
-          
-          <p>
-            A random picture, because I would like to maintain my privacy and
-            let my code speak for me, instead of images.
-          </p>
-        </html>
-      </html>
+            src="https://curioustimes.in/wp-content/uploads/2022/04/Roohis-Creatives-3.jpg"
+            alt="picture of a puppy"
+          />
+          <div>
+            A random picture, because I would like to maintain my privacy and let my code speak for me, instead of images.
+            
+          </div>
+        </p>
+      </div>
 
-      <html id="contact">
-        <html>
-          Contact
-        </html>
+      <div id="contact">
+        <div>Contact</div>
         <!--When clicking on these element, nothing happens! But I want to be redirected to the other websites. Why is it not working?-->
-        <html href="https://github.com/spiced-academy">
-          GitHub
-        </html>
-        <html href="https://de.linkedin.com/">
-          LinkedIn
-        </html>
-        <html href="https://codesandbox.io/">
-          CodeSandbox
-        </html>
-      </html>
+        <a href="https://github.com/spiced-academy">GitHub</a>
+        <a href="https://de.linkedin.com/">LinkedIn</a>
+        <a href="https://codesandbox.io/">CodeSandbox</a>
+      </div>
 
-      <html id="skills">
-        <html>
-          Skillset
-        </html>
+      <div id="skills">
+        <div>Skillset</div>
         <!--This part could use some bulletpoint to be more structured-->
-        <html>
-          <html>
-            HTML
-          </html>
-          <html>
-            CSS
-          </html>
-          <html>
-            JavaScript
-          </html>
-          <html>
-            React
-          </html>
-          <html>
-            Painting rainbows
-          </html>
-          <html>
-            Party
-          </html>
-        </html>
-      </html>
-    </html>
-  </html>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Painting rainbows</li>
+          <li>Party</li>
+        </ul>
+      </div>
+    </main>
+  </body>
 </html>
