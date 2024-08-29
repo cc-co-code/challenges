@@ -9,7 +9,12 @@ body {
 }
 
 /* put a selector here to select div elements (see index.html) */
-SELECTOR HERE {
+div {
+  background-color: hotpink;
+  height: 150px;
+  width: 150px;
+  color: white;
+  border-radius: 8px;
   font-family: cursive;
   padding: 8px;
 
