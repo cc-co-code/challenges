@@ -16,19 +16,24 @@ body {
  * Place the header at the top of the viewport and make sure, that it remains there when the
  * document is scrolled.
  */
+
 .header {
-  background: #8236FF;
+  position: sticky;
+  background: #8236ff;
   color: #ffffff;
   height: 80px;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   padding: 10px;
+  top: 0px;
 }
 
 .header__text {
-  color: #FFDEE2;
+  position: sticky;
+  color: #ffdee2;
 }
 
 .header__heading {
+  position: sticky;
   margin: 0;
 }
 
@@ -38,9 +43,11 @@ body {
  * document is scrolled.
  */
 .footer {
-  background:  #7fD9E2;
+  background: #7fd9e2;
   color: #ffffff;
   height: 48px;
+  position: sticky;
+  bottom: 0;
 }
 
 /**
@@ -49,10 +56,11 @@ body {
  */
 .card {
   margin: 20px 10%;
-  border: 5px solid #8236FF;
+  border: 5px solid #8236ff;
   padding: 3% 10%;
   scroll-margin-top: 100px;
   border-radius: 2rem;
+  position: relative;
 }
 
 .card__heading {
@@ -63,11 +71,14 @@ body {
  * Place the bookmark in the top, right corner of each card.
  */
 .card__bookmark {
-  border: 2px solid #8236FF;
+  border: 2px solid #8236ff;
   font-size: 2em;
   padding: 6px 12px;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  position: relative;
+  top: -45px;
+  right: -512px;
 }
 
 /**
@@ -75,11 +86,13 @@ body {
  * unaffected when the document is scrolled.
  */
 .goto-top {
+  position: fixed;
+  top: 10px;
   width: 48px;
   height: 48px;
   padding: 8px;
   border-radius: 50%;
-  background: #8236FF;
+  background: #8236ff;
   color: white;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
   text-decoration: none;
@@ -87,4 +100,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
+  top: 600px;
 }
