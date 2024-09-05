@@ -10,6 +10,11 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+const title = "New Things Coming";
+const text = "Guys, it's time to drop some new stuff, stay tuned!";
+let numberOfLikes = 11;
+const user = "Mary";
+const isReported = true;
 
 // --^-- write your code here --^--
 
@@ -18,5 +23,12 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+console.log(title);
+console.log(text);
+console.log(numberOfLikes);
+console.log(user);
+console.log(isReported);
+
+numberOfLikes += 1;
 
 // --^-- write your code here --^--
