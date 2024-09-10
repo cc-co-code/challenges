@@ -10,6 +10,65 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section></section>
+   <section>
+    <form aria-labelledby="title">
+
+    <h2 id="title">We want to get to know you! Please enter your personal information</h2>
+
+    
+        <fieldset>
+          <legend>Personal Information</legend>
+  
+          <label for="first-name">First Name:</label>
+  
+            <input
+            required
+            id="first-name"
+            type="text"
+            name="first-name"
+            >
+            <label for="last-name">Last Name:</label>
+            <input
+            required
+            id="last-name"
+            type="text"
+            name="last-name"
+            >
+
+            <label for="date">Enter your Birthday: </label>
+            <input
+            id="birthday"
+            type="date"
+            name="Birthday"
+            required placeholder="dd.mm.yyyy"
+            >
+
+            <h3>Can you tell us a little bit about yourself?</h3>
+
+            <fieldset>
+              <legend>Further Information</legend>
+              <label for="fav-color">Favorite Color</label>
+              <input 
+              id="fav-color"
+              type="color"
+              name="color"
+              value="#E5430F"
+              >
+
+              <label for="fav-pet">What's your Favorite Pet?</label>
+              <select id="fav-pet" name="favorite-pet" required>
+              <option value="">---Please choose an option---</option>
+              <option value="agra-cadabra">Agra cadabra</option>
+              <option value="chicken-turtle">Chicken Turtle</option>
+              <option value="fried-egg-jellyfish">Fried Egg Jellyfish</option>
+            </select>
+            </fieldset>
+
+  
+            <input type="submit" value="Submit">
+        </fieldset>
+      
+    </section>
+  </form>
   </body>
 </html>
