@@ -21,6 +21,8 @@ body {
   border: none;
   font-size: 1.5rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: background-color 0.5s ease-in, color 0.5s ease-out,
+    box-shadow 0.5s ease-in-out;
 }
 
 .start-button:hover {
@@ -28,6 +30,8 @@ body {
   color: white;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  animation: bounce;
+  animation-duration: 4s;
 }
 
 .start-button:disabled {
@@ -49,7 +53,6 @@ body {
   background: rgb(71, 212, 94);
   border-radius: 7px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-
   transition: transform 0.5s;
 }
 
