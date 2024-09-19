@@ -24,10 +24,27 @@ const cards = [
   },
 ];
 
-const lowerCaseAnswers = null; // ['as often as you like.', ...]
+/*## Task
 
-const questionsAndAnswersTogether = null; // ["How often can I use <header>? - As often as you like.", ...]
+In the `./index.js` file, there is a `cards` array with three objects.
 
-const questionAndAnswer = null; // [{ question: 'How often can I use <header>?', answer: 'As often as you like.'}, {...}]
+Below this array, you will find a couple of variables (e.g. `lowerCaseAnswers`). They all are initialized with `null`.
+
+And now it's your turn: delete the value `null` and write code such that the variables have a value corresponding to their name. Use `map` to achieve this goal.*/
+
+const lowerCaseAnswers = cards.map((card) => {
+  return card.answer.toLowerCase();
+});
+
+console.log(lowerCaseAnswers);
+// ['as often as you like.', ...]
+
+const questionsAndAnswersTogether = cards.map((card) => {
+  return `${card.question}-${card.answer}`;
+}); // ["How often can I use <header>? - As often as you like.", ...]
+
+const questionAndAnswer = cards.map((card) => {
+  return { question: card.question, answer: card.answer };
+}); // [{ question: 'How often can I use <header>?', answer: 'As often as you like.'}, {...}]
 
 export { lowerCaseAnswers, questionsAndAnswersTogether, questionAndAnswer };
